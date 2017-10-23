@@ -5,7 +5,6 @@ import java.util.List;
 
 import cn.tyutzgl.springmvc.pojo.Items;
 import cn.tyutzgl.springmvc.pojo.ItemsExample;
-import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
