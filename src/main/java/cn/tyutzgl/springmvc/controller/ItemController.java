@@ -96,7 +96,7 @@ public class ItemController {
     }
 
     @RequestMapping("/item/insertItem")
-    public String insertItem(Items item,ModelMap modelMap){
+    public String insertItem(Items item){
         System.out.println(item.getName());
         this.itemService.insetItem(item);
         return "redirect:/item/itemList";
