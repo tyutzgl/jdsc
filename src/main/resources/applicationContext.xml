@@ -10,8 +10,6 @@
 	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
 	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
 
-    <context:component-scan base-package="cn.tyutzgl.springmvc" />
-
     <!-- 加载配置文件 -->
     <context:property-placeholder location="classpath:jdbc.properties"/>
 
@@ -44,4 +42,5 @@
 
     <import resource="classpath:spring/applicationContext-trans.xml"/>
     <import resource="classpath:spring/applicationContext-service.xml"/>
+    <import resource="classpath:spring/applicationContext-mapper.xml"/>
 </beans>
