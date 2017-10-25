@@ -27,7 +27,7 @@
     <!-- 配置视图解析器 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <!-- 配置逻辑视图的前缀 -->
-        <property name="prefix" value="/jsp/"/>
+        <property name="prefix" value="/WEB-INF/jsp/"/>
         <!-- 配置逻辑视图的后缀 -->
         <property name="suffix" value=".jsp"/>
     </bean>
@@ -36,8 +36,8 @@
     <!--<mvc:default-servlet-handler/>-->
 
     <!-- 对静态资源文件的访问  方案二 （二选一）-->
-    <mvc:resources mapping="/js/**" location="/js/" cache-period="31556926"/>
-    <mvc:resources mapping="/css/**" location="/css/" cache-period="31556926"/>
+    <mvc:resources mapping="/js/**" location="/js/" />
+    <mvc:resources mapping="/css/**" location="/css/"/>
 
 
 </beans>

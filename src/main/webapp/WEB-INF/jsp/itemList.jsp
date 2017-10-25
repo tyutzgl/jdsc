@@ -6,7 +6,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>查询商品列表</title>
-    <link rel="stylesheet" type="text/css" href="../css/simpleTable.css">
+    <link rel="stylesheet" type="text/css" href="../../css/simpleTable.css">
 </head>
 <body>
 <form id="itemForm" action="${pageContext.request.contextPath }/item/queryItem" method="post">
