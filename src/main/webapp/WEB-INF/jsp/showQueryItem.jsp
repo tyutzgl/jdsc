@@ -5,13 +5,13 @@
   Time: 下午 8:43
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <html>
 <head>
     <title>查询结果</title>
-    <link rel="stylesheet" type="text/css" href="/css/simpleTable.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/simpleTable.css">
 </head>
 <body>
 <form action="" method="post">

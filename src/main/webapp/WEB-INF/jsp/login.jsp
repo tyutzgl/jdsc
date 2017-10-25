@@ -9,8 +9,8 @@
 <html>
 <head>
     <title>login</title>
-    <link rel="stylesheet" href="/css/reset.css"/>
-    <link rel="stylesheet" href="/css/login.css"/>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/reset.css"/>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/login.css"/>
 </head>
 <body>
 
@@ -20,12 +20,12 @@
         <form id="Login" name="Login" method="post" onsubmit="" action="${pageContext.request.contextPath }/item/itemList">
             <li class="login-item">
                 <span>用户名：</span>
-                <input type="text" id="username" name="UserName" class="login_input">
+                <input type="text" id="username" name="UserName" class="login_input" title="">
                 <span id="count-msg" class="error"></span>
             </li>
             <li class="login-item">
                 <span>密　码：</span>
-                <input type="password" id="password" name="password" class="login_input">
+                <input type="password" id="password" name="password" class="login_input" title="">
                 <span id="password-msg" class="error"></span>
             </li>
             <!--<li class="login-item verify">

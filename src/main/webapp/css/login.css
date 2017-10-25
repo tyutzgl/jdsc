@@ -67,12 +67,12 @@ body {
     width: 150px;
     color: #FFFFFF;
     font-size: 16px;
-    font-family: 'Courier New';
+    font-family: 'Courier New', serif;
     border: none;
     border-radius: 5px;
 }
 
 .loginwarrp .login_form .login-item .error {
     color: #F00;
-    font-family: 'Courier New';
+    font-family: 'Courier New', serif;
 }

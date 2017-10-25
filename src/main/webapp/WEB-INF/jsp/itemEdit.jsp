@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
@@ -7,8 +7,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>修改商品信息</title>
-    <link rel="stylesheet" type="text/css" href="/css/simpleTable.css">
-    <script type="text/javascript" src="/js/pageContext.js"></script>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/simpleTable.css">
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/pageContext.js"></script>
 </head>
 <body>
 <!-- 上传图片是需要指定属性 enctype="multipart/form-data" -->
@@ -21,16 +21,17 @@
         </tr>
         <tr>
             <th>商品名称</th>
-            <td><input type="text" name="name" value="${item.name }"/></td>
+            <td><input type="text" name="name" value="${item.name }" title="商品名称"/></td>
         </tr>
         <tr>
             <th>商品价格</th>
-            <td><input type="text" name="price" value="${item.price }"/></td>
+            <td><input type="text" name="price" value="${item.price }" title="商品价格"/></td>
         </tr>
         <tr>
             <th>商品生产日期</th>
             <td><input type="text" name="createtime"
-                       value="<fmt:formatDate value="${item.createtime}" pattern="yyyy-MM-dd HH:mm:ss"/>"/></td>
+                       value="<fmt:formatDate value="${item.createtime}" pattern="yyyy-MM-dd HH:mm:ss"/>"
+                       title="商品生产日期"/></td>
         </tr>
         <%--
         <tr>
@@ -47,7 +48,7 @@
         <tr>
             <th>商品简介</th>
             <td>
-                <textarea rows="3" cols="30" name="detail">${item.detail }</textarea>
+                <textarea rows="3" cols="30" name="detail" title="商品简介">${item.detail }</textarea>
             </td>
         </tr>
         <tr>

@@ -5,14 +5,14 @@
   Time: 下午 11:25
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>添加新商品</title>
-    <link rel="stylesheet" type="text/css" href="/css/simpleTable.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/simpleTable.css">
 </head>
 <body>
 <form id="itemForm" action="${pageContext.request.contextPath }/item/insertItem" method="post">
@@ -34,8 +34,7 @@
         </tr>
         <tr>
             <th>商品生产日期</th>
-            <td><input type="text" name="createtime"
-                       value="1999-01-01 00:00:00"/></td>
+            <td><input type="text" name="createtime" value="1999-01-01 00:00:00" title=""/></td>
         </tr>
         <%--
         <tr>
@@ -52,7 +51,7 @@
         <tr>
             <th>商品简介</th>
             <td>
-                <textarea rows="3" cols="30" name="detail"></textarea>
+                <textarea rows="3" cols="30" name="detail" title=""></textarea>
             </td>
         </tr>
         <tr>
