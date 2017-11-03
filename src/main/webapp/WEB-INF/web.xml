@@ -6,6 +6,8 @@
 
     <display-name>Archetype Created Web Application</display-name>
 
+
+
     <!-- 配置 applicationContext.xml 全局监听事件 -->
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
@@ -14,6 +16,7 @@
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath:applicationContext.xml</param-value>
     </context-param>
+
 
 
     <!-- 配置 springMVC.xml -->
@@ -30,6 +33,8 @@
         <servlet-name>springMVC</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
+
+
 
     <!-- 解决post乱码问题 -->
     <filter>
