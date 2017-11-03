@@ -5,10 +5,9 @@
 * QQ:947082708
 * phone:15296702001
 
-```java
-class jdsc{
-    public static void main(String[] args){
-      System.out.println("jdsc");
-    }
-}
-```
+### 所用技术
+**_jsp、freemarker、css、js、ajax_**
+***
+**_spring springMVC Mybaits_**
+
+##### 代码参照：传智播客spring视频
