@@ -15,9 +15,17 @@ import java.util.List;
 @Controller
 public class UserController {
 
-    @Qualifier("itemServiceImpl")
+    private final ItemService itemService;
+
     @Autowired
-    private  ItemService itemService;
+    public UserController(@Qualifier("itemServiceImpl") ItemService itemService) {
+        this.itemService = itemService;
+    }
+
+    @RequestMapping("/welcome")
+    public String welcome(){
+        return "welcome";
+    }
 
     @RequestMapping("/login")
     public String login(){
@@ -25,13 +33,11 @@ public class UserController {
     }
 
 
-    @RequestMapping("/index")
-    public String hello( ModelMap modelMap){
-        // 根据id查询商品数据
-        List<Items> list = this.itemService.queryItemList();
+    @RequestMapping("/adCtr")
+    public String hello(){
 
-        modelMap.addAttribute("list",list);
 
         return "index";
     }
+
 }

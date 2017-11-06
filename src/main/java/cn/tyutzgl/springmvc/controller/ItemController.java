@@ -101,5 +101,17 @@ public class ItemController {
         this.itemService.insetItem(item);
         return "redirect:/item/itemList";
     }
+
+
+    @RequestMapping("item/simpList")
+
+    public String simpList(ModelMap modelMap){
+
+        List<Items> list = this.itemService.queryItemList();
+
+        modelMap.addAttribute("list", list);
+
+        return "list";
+    }
 }
 
