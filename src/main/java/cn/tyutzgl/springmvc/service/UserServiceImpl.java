@@ -22,4 +22,17 @@ public class UserServiceImpl implements UserService{
     public List<User> queryUserList() {
         return this.userMapper.selectByExample(null);
     }
+
+    @Override
+    public boolean login(String username, String password) {
+
+        User user = this.userMapper.selectByName(username);
+
+        if (user != null){
+            if (user.getUsername().equals(username) && user.getPassword().equals(password))
+                return true;
+        }
+
+        return false;
+    }
 }

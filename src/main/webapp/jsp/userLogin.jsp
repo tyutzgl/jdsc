@@ -28,12 +28,12 @@
                 <input type="password" id="password" name="password" class="login_input" title="">
                 <span id="password-msg" class="error"></span>
             </li>
-            <!--<li class="login-item verify">
+            <li class="login-item verify">
                 <span>验证码：</span>
                 <input type="text" name="CheckCode" class="login_input verify_input">
             </li>
-            <img src="images/verify.png" border="0" class="verifyimg" />
-            <div class="clearfix"></div> -->
+            <img src="" border="0" class="verifyimg" />
+            <div class="clearfix"></div>
             <li class="login-sub">
                 <input type="submit" name="Submit" value="登录"/>
                 <input type="reset" name="Reset" value="重置"/>

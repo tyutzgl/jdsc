@@ -154,6 +154,11 @@
             <include refid="Example_Where_Clause"/>
         </if>
     </select>
+    <select id="selectByName" resultType="cn.tyutzgl.springmvc.pojo.User">
+        select id, username, birthday, sex, address, password
+        from user
+        where username = #{username,jdbcType=VARCHAR}
+    </select>
     <update id="updateByExampleSelective" parameterType="map">
         update user
         <set>
